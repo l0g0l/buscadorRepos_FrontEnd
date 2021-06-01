@@ -1,0 +1,25 @@
+
+.navclass {
+  padding: 12px 20px;
+  background-color: #000000;
+  position: fixed;
+  width: 346vh;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  
+}
+.header {
+  &-list {
+    display: flex;
+    
+    &-li {
+      width: 36px;
+      margin-right: 30px;
+    }
+  }
+}
+
+img {
+  width: 42px;
+}
