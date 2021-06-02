@@ -1,6 +1,8 @@
 import React from 'react';
 import linkedin from '../../../Images/linkedin.png';
 import github from '../../../Images/github.png';
+import usuario2 from '../../../Images/usuario2.png';
+
 
 import './navmenu.scss'
 
@@ -10,6 +12,11 @@ const NavMenu = () => {
             <nav className="navclass">
 
                 <ul className="header-list">
+                <li className="header-list-li">
+                        <a href="#" >
+                            <img src={usuario2} alt="avatar" />
+                        </a>
+                    </li>
                     <li className="header-list-li">
                         <a href="https://github.com/l0g0l" target="_blank">
                             <img src={github} alt="github" />

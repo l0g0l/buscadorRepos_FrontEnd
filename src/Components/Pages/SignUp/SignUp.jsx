@@ -62,7 +62,7 @@ const Register = (props) => {
         setName(name);
     };
 
-  
+
     const onChangeEmail = (e) => {
         const email = e.target.value;
         setEmail(email);
@@ -89,27 +89,7 @@ const Register = (props) => {
                 setMessage('Usuario creado correctamente')
                 setSuccessful(true)
             }
-            
-
-/*             AuthService.register(name, email, password).then(
-                (response) => {
-                    setMessage(response.data.message);
-                    setSuccessful(true);
-                },
-                (error) => {
-                    const resMessage =
-                        (error.response &&
-                            error.response.data &&
-                            error.response.data.message) ||
-                        error.message ||
-                        error.toString();
-
-                    setMessage(resMessage);
-                    setSuccessful(false);
-                }
-            ); */
         }
-
     };
 
     return (
@@ -129,7 +109,7 @@ const Register = (props) => {
                                     onChange={onChangeName}
                                     validations={[required, vname]} />
                             </div>
-                     
+
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
                                 <Input
