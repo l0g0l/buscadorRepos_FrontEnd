@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; //Libería de React para la creación y validación de formularios
 import axios from 'axios'; // solicitudes http a una API
-import Table from '../Table/Table'
+// import Table from '../Table/Table'
 import Card from '../../_Reusable/Card/Card';
 
 

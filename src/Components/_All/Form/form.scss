@@ -1,11 +1,8 @@
-.container-form {
-height: 180vh;
-}
 .form-container {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 350px;
+  height: 340px;
   align-items: center;
 }
 .form {
@@ -45,14 +42,18 @@ height: 180vh;
 }
 .error {
   color: #9e9d89;
-  font-weight: normal;
-  font-size: 12px;
+  font-weight: bold;
+  font-size: 14px;
 }
 .card-container {
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   justify-items: inherit;
   margin-left: 72px;
   margin-right: 72px;
+}
+div[role="main"] {
+  overflow-y: scroll;
+  height: 100%;
 }
