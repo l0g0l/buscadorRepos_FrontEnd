@@ -27,21 +27,23 @@
     background-color: #fff;
     padding-left: 12px;
     border: none;
+    margin-right: 16px;
   }
 }
 .formbtn-btn {
-  margin-left: 20px;
+  // margin-left: 20px;
   outline: none !important;
   border-radius: 8px;
   background-color: #e2bcb7;
   color: #536162;
-  font-weight: 600;
+  // font-weight: 300;
   height: 34px;
   border: none;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+  margin-bottom: 30px;
 }
 .error {
-  color: #9e9d89;
+  color: black;
   font-weight: bold;
   font-size: 14px;
 }

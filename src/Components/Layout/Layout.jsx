@@ -4,7 +4,7 @@ import Footer from "../../Components/Layout/Footer/Footer"
 import NavMenu from "../../Components/Layout/Header/NavMenu"
 
 
-
+import './layout.scss'
 
 const Layout = ({children}) => {
     return (

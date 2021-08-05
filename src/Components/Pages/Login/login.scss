@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 .container {
     height: 100vh;  
     display: flex;     
     align-items: center;
     justify-content: center;
+    width: 40%;
 }
+.formdiv {
+    margin-bottom: 20px;
+}
+.label {
+    margin-bottom: 50px;
+}
+a {
+    color: black;
+       
+}   
+a:hover {
+    font-weight: bold;   
+}
+.txt-title {
+    position: absolute;
+    top: 64px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 50px;
+}
+ 

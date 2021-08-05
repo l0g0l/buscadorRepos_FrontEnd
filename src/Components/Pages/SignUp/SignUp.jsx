@@ -101,7 +101,7 @@ const Register = (props) => {
                 <Form onSubmit={handleRegister} ref={form}>
                     {!successful && (
                         <div>
-                            <div className="form-group">
+                            <div className="formdiv">
                                 <label htmlFor="name">Username</label>
                                 <Input
                                     type="text"
@@ -112,7 +112,7 @@ const Register = (props) => {
                                     validations={[required, vusername]} />
                             </div>
 
-                            <div className="form-group">
+                            <div className="formdiv">
                                 <label htmlFor="email">Email</label>
                                 <Input
                                     type="text"
@@ -124,8 +124,8 @@ const Register = (props) => {
                                 />
                             </div>
 
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
+                            <div className="formdiv ">
+                                <label className="label" htmlFor="password">Password</label>
                                 <Input
                                     type="password"
                                     className="formdiv-input"
@@ -137,7 +137,7 @@ const Register = (props) => {
                             </div>
 
                             <div className="formbtn">
-                                <button className="btn btn-primary btn-block">Regístrate</button>
+                                <button className="formbtn-btn"><span>Regístrate</span></button>
                             </div>
                         </div>
                     )}
@@ -154,7 +154,7 @@ const Register = (props) => {
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
                 <div>
-                    <p className="form-p">¿Ya tienes cuenta?<Link to='./' className="formlink" >Inicia sesión</Link></p>
+                    <p className="form-p">¿Ya tienes cuenta? <Link to='./'  >Inicia sesión</Link></p>
 
                 </div>
 

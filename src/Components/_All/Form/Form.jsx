@@ -51,7 +51,7 @@ export default function Form() {
                     </div>
 
                     <div className="formbtn">
-                        <input className="formbtn-btn" type="submit" value="Search" />
+                        <button className="formbtn-btn" type="submit"><span>Search</span></button>
 
                     </div>
 

@@ -70,9 +70,12 @@ const Login = (props) => {
     return (
         <div className="container">
             <div className="formdiv-login">
+                <div className="txt-title">
+                    <span>SearchGithubRepository</span>
+                </div>
                 <Form onSubmit={handleLogin} ref={form}>
                     <div className="formdiv">
-                        <label htmlFor="email">Email</label>
+                        <label className="label" htmlFor="email">Email</label>
                         <Input
                             type="text"
                             className="formdiv-input"
@@ -112,7 +115,7 @@ const Login = (props) => {
                 </Form>
 
                 <div className="form-login-txt">
-                    <p className="form-login-txt-p">¿No tienes cuenta? <Link to="./signup" className="formlink">Regístrate</Link></p>
+                    <p className="form-login-txt-p">¿No tienes cuenta? <Link to="./signup" >Regístrate</Link></p>
                 </div>
             </div>
 
