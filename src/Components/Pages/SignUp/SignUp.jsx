@@ -5,6 +5,8 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 
+import './signup.scss'
+
 const crypto = require('crypto');
 
 const required = (value) => {
@@ -38,7 +40,7 @@ const vusername = (value) => {
 };
 
 const vpassword = (value) => {
-    if ((value.length < 6 || value.length )> 10 && value(/^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/)) {
+    if ((value.length < 6 || value.length) > 10 && value(/^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/)) {
         return (
             <div className="alert alert-danger" role="alert">
                 Entre 6 y 10 caracteres. Debe contener al menos un número, mayúscula, minúscula y carácter especial
@@ -93,8 +95,8 @@ const Register = (props) => {
     };
 
     return (
-        <div className="col-md-12">
-            <div className="card card-container">
+        <div className="container">
+            <div className="formdiv-signup">
 
                 <Form onSubmit={handleRegister} ref={form}>
                     {!successful && (
@@ -151,8 +153,12 @@ const Register = (props) => {
                     )}
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
+                <div>
+                    <p className="form-p">¿Ya tienes cuenta?<Link to='./' className="formlink" >Inicia sesión</Link></p>
+
+                </div>
+
             </div>
-            <p className="form-p">¿Ya tienes cuenta?<Link to='./' className="formlink" >Inicia sesión</Link></p>
 
         </div>
     );

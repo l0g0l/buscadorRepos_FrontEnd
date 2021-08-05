@@ -4,6 +4,8 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 
+import './login.scss'
+
 
 const crypto = require('crypto');
 
@@ -66,7 +68,7 @@ const Login = (props) => {
 
 
     return (
-        <div className="login-container">
+        <div className="container">
             <div className="formdiv-login">
                 <Form onSubmit={handleLogin} ref={form}>
                     <div className="formdiv">
@@ -108,13 +110,13 @@ const Login = (props) => {
                     )}
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
+
+                <div className="form-login-txt">
+                    <p className="form-login-txt-p">¿No tienes cuenta? <Link to="./signup" className="formlink">Regístrate</Link></p>
+                </div>
             </div>
 
-            <div className="form-login-txt">
-                <p className="form-login-txt-p">¿No tienes cuenta? <Link to="./signup" className="formlink">Regístrate</Link></p>
-         
 
-            </div>
         </div>
     )
 
