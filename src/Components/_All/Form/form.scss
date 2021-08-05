@@ -48,10 +48,10 @@
 .card-container {
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-  justify-items: inherit;
-  margin-left: 72px;
-  margin-right: 72px;
+  grid-template-columns: 22% 22% 22%;
+  justify-items: stretch;
+  justify-content: right;
+  margin-right: 241px;
 }
 div[role="main"] {
   overflow-y: scroll;

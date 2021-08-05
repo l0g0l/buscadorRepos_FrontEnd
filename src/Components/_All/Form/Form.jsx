@@ -61,9 +61,9 @@ export default function Form() {
             </div>
             <div className="card-container">
 
-                {repos.map((item) => (
+                {repos.map((item, i) => (
 
-                    <Card apidata={item} />
+                    <Card apidata={item} key = {i} />
 
                 ))
 
