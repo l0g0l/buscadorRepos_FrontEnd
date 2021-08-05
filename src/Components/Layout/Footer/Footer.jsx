@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer">
                 <div>
-                    <span className="footer-txt">Mi primer <a href="https://nuwe.io/" target="_blank"><i>Hackathon</i></a> hecho con mucho</span>
+                    <span className="footer-txt">Mi primer <a href="https://nuwe.io/" target="_blank" rel="noreferrer" ><i>Hackathon</i></a> hecho con mucho</span>
 
                 </div>
                 <div className="corazon-container">

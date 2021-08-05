@@ -18,12 +18,12 @@ const NavMenu = () => {
                         </a>
                     </li>
                     <li className="header-list-li">
-                        <a href="https://github.com/l0g0l" target="_blank">
+                        <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer" >
                             <img src={github} alt="github" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank">
+                        <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer" >
                             <img src={linkedin} alt="linkedin" />
                         </a>
                     </li>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Form from '../../_All/Form/Form';
-import Card from '../../_Reusable/Card/Card';
 
 import './home.scss';
 

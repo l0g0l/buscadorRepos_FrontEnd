@@ -3,12 +3,9 @@ import { Link } from 'react-router-dom'
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-// import StarRating from "../../-Reusable/StarRating/StarRating";
-var crypto = require('crypto');
-
-//import AuthService from "../../Services/auth.service";
 
 
+const crypto = require('crypto');
 
 const required = (value) => {
     if (!value) {
@@ -48,18 +45,18 @@ const Login = (props) => {
         form.current.validateAll();
 
         if (checkBtn.current.context._errors.length === 0) {
-            if (localStorage.getItem(`nuwe_auth__${email}`) !== null) {
+            if (localStorage.getItem(`userEmail-${email}`) !== null) {
                 const password_hash = crypto.createHash('sha256').update(password).digest('base64')
-                if (localStorage.getItem(`nuwe_auth__${email}`) == password_hash) {
+                if (localStorage.getItem(`userEmail-${email}`) === password_hash) {
                     props.history.push("/home");
                     window.location.reload();
                 } else {
                     setLoading(false);
-                    setMessage('Usuario o contraseña incorrectos');
+                    setMessage('Email o contraseña incorrectos');
                 }
             } else {
                 setLoading(false);
-                setMessage('Usuario o contraseña incorrectos');
+                setMessage('Email o contraseña incorrectos');
             }
 
         } else {
@@ -115,7 +112,7 @@ const Login = (props) => {
 
             <div className="form-login-txt">
                 <p className="form-login-txt-p">¿No tienes cuenta? <Link to="./signup" className="formlink">Regístrate</Link></p>
-                {/* <StarRating/> */}
+         
 
             </div>
         </div>

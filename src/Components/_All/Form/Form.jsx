@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; //Libería de React para la creación y validación de formularios
 import axios from 'axios'; // solicitudes http a una API
-// import Table from '../Table/Table'
 import Card from '../../_Reusable/Card/Card';
 
 
@@ -42,11 +41,11 @@ export default function Form() {
                                 name="search"
                                 className="formdiv-input"
                                 autoFocus
-                                placeholder="Usuario GitHub"
+                                placeholder="GitHub User"
                                 {...register("search", { required: true })} />
                         </div>
                         <div className="error">
-                            {errors.search?.type === 'required' && "Debe introducir su usuario de GitHub"}
+                            {errors.search?.type === 'required' && "You must enter your GitHub user"}
 
                         </div>
                     </div>
