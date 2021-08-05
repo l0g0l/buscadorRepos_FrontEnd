@@ -102,22 +102,22 @@ const Register = (props) => {
                     {!successful && (
                         <div>
                             <div className="formdiv">
-                                <label htmlFor="name">Username</label>
+                                <label for="username">Username</label>
                                 <Input
                                     type="text"
                                     className="formdiv-input"
-                                    name="username"
+                                    id="username"
                                     value={username}
                                     onChange={onChangeUsername}
                                     validations={[required, vusername]} />
                             </div>
 
                             <div className="formdiv">
-                                <label htmlFor="email">Email</label>
+                                <label for="email">Email</label>
                                 <Input
                                     type="text"
                                     className="formdiv-input"
-                                    name="email"
+                                    id="email"
                                     value={email}
                                     onChange={onChangeEmail}
                                     validations={[required, validEmail]}
@@ -125,11 +125,11 @@ const Register = (props) => {
                             </div>
 
                             <div className="formdiv ">
-                                <label className="label" htmlFor="password">Password</label>
+                                <label className="label" for="password">Password</label>
                                 <Input
                                     type="password"
                                     className="formdiv-input"
-                                    name="password"
+                                    id="password"
                                     value={password}
                                     onChange={onChangePassword}
                                     validations={[required, vpassword]}

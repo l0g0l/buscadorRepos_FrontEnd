@@ -1,6 +1,5 @@
 import React from 'react';
 import corazon2 from '../../../Images/corazon2.png'
-import github from '../../../Images/github.png';
 
 
 

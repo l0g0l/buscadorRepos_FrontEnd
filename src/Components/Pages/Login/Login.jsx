@@ -71,25 +71,25 @@ const Login = (props) => {
         <div className="container">
             <div className="formdiv-login">
                 <div className="txt-title">
-                    <span>SearchGithubRepository</span>
+                    <h1>SearchGithubRepository</h1>
                 </div>
                 <Form onSubmit={handleLogin} ref={form}>
                     <div className="formdiv">
-                        <label className="label" htmlFor="email">Email</label>
+                        <label className="label" for="email">Email</label>
                         <Input
                             type="text"
                             className="formdiv-input"
-                            name="email"
+                            id="email"
                             value={email}
                             onChange={onChangeEmail}
                             validations={[required]} />
                     </div>
                     <div className="formdiv">
-                        <label htmlFor="password">Password</label>
+                        <label for="password">Password</label>
                         <Input
                             type="password"
                             className="formdiv-input"
-                            name="password"
+                            id="password"
                             value={password}
                             onChange={onChangePassword}
                             validations={[required]}

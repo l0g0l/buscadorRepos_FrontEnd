@@ -36,6 +36,7 @@ export default function Form() {
                 <form className="form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="formbtn-msg">
                         <div className="formdiv">
+            
                             <input
                                 type="text"
                                 name="search"

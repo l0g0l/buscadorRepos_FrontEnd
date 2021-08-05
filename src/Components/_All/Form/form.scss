@@ -29,14 +29,16 @@
     border: none;
     margin-right: 16px;
   }
+  ::placeholder {
+    font-family: 'Krona One', sans-serif;
+    font-weight: lighter;
+  }
 }
 .formbtn-btn {
-  // margin-left: 20px;
   outline: none !important;
   border-radius: 8px;
-  background-color: #e2bcb7;
-  color: #536162;
-  // font-weight: 300;
+  background-color: black;
+  color: white;
   height: 34px;
   border: none;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);

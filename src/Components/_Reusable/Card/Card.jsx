@@ -9,12 +9,12 @@ const Card = (props) => {
 
             <div className="cardtxt">
             <div>
-                    <p className="encabezado">Repository Owner:</p>
-                    <p className="txt">{props.apidata.owner.login}</p>
+                    <h2 className="encabezado">Repository Owner:</h2>
+                    <p className="txt">{props.apidata.owner.login}</p> 
 
                 </div>
                 <div>
-                    <p className="encabezado">Repository Name:</p>
+                    <h2 className="encabezado">Repository Name:</h2>
                     <p className="txt">{props.apidata.name}</p>
 
                 </div>
