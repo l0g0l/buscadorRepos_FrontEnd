@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import githubblanca from '../../../Images/githubblanca.png';
 import usuario2 from '../../../Images/usuario2.png';
 
@@ -8,13 +8,13 @@ import './navmenu.scss'
 const NavMenu = () => {
     return (
         <div className="nav-container">
-            <nav className="navclass">
+            <nav className="navclass" aria-label="Main Navigation" role="navigation">
 
                 <ul className="header-list">
-                <li className="header-list-li">
-                        <a href="#" >
-                            <img src={usuario2} alt="avatar" />
-                        </a>
+                    <li className="header-list-li">
+
+                        <img src={usuario2} alt="avatar" />
+
                     </li>
                     <li className="header-list-li">
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer" >

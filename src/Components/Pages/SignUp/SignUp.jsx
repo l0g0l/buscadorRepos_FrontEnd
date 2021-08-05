@@ -96,24 +96,26 @@ const Register = (props) => {
 
     return (
         <div className="container">
-            <div className="formdiv-signup">
+            <main className="formdiv-signup">
 
                 <Form onSubmit={handleRegister} ref={form}>
                     {!successful && (
                         <div>
                             <div className="formdiv">
-                                <label for="username">Username</label>
+                                <label htmlFor="username">Username</label>
                                 <Input
                                     type="text"
                                     className="formdiv-input"
                                     id="username"
                                     value={username}
                                     onChange={onChangeUsername}
-                                    validations={[required, vusername]} />
+                                    validations={[required, vusername]}
+                                    aria-describedby="username" 
+                                    title="username" />
                             </div>
 
                             <div className="formdiv">
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                                 <Input
                                     type="text"
                                     className="formdiv-input"
@@ -121,11 +123,12 @@ const Register = (props) => {
                                     value={email}
                                     onChange={onChangeEmail}
                                     validations={[required, validEmail]}
-                                />
+                                    aria-describedby="email"
+                                    title="email" />
                             </div>
 
                             <div className="formdiv ">
-                                <label className="label" for="password">Password</label>
+                                <label className="label" htmlFor="password">Password</label>
                                 <Input
                                     type="password"
                                     className="formdiv-input"
@@ -133,7 +136,8 @@ const Register = (props) => {
                                     value={password}
                                     onChange={onChangePassword}
                                     validations={[required, vpassword]}
-                                />
+                                    aria-describedby="password"
+                                    title="password"/>   
                             </div>
 
                             <div className="formbtn">
@@ -143,7 +147,7 @@ const Register = (props) => {
                     )}
                     {message && (
                         <div className="error">
-                            <div
+                            <div 
                                 className={successful ? "alert alert-success" : "alert alert-danger"}
                                 role="alert"
                             >
@@ -158,7 +162,7 @@ const Register = (props) => {
 
                 </div>
 
-            </div>
+            </main>
 
         </div>
     );

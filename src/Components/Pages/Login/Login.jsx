@@ -70,22 +70,24 @@ const Login = (props) => {
     return (
         <div className="container">
             <div className="formdiv-login">
-                <div className="txt-title">
+                <header className="txt-title">
                     <h1>SearchGithubRepository</h1>
-                </div>
+                </header>
                 <Form onSubmit={handleLogin} ref={form}>
                     <div className="formdiv">
-                        <label className="label" for="email">Email</label>
+                        <label className="label" htmlFor="email">Email</label>
                         <Input
                             type="text"
                             className="formdiv-input"
                             id="email"
                             value={email}
                             onChange={onChangeEmail}
-                            validations={[required]} />
+                            validations={[required]}
+                            aria-describedby="email"
+                            title="email" />
                     </div>
                     <div className="formdiv">
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <Input
                             type="password"
                             className="formdiv-input"
@@ -93,13 +95,12 @@ const Login = (props) => {
                             value={password}
                             onChange={onChangePassword}
                             validations={[required]}
+                            aria-describedby="password"
+                            title="password"
                         />
                     </div>
                     <div className="formbtnlogin">
-                        <button className="formbtn-btn" disabled={loading}>
-                            {loading && (
-                                <span className="error"></span>
-                            )}
+                        <button className="formbtn-btn" >
                             <span>Login</span>
                         </button>
                     </div>
@@ -126,6 +127,3 @@ const Login = (props) => {
 }
 
 export default Login
-
-
-

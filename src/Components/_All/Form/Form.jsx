@@ -36,16 +36,15 @@ export default function Form() {
                 <form className="form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="formbtn-msg">
                         <div className="formdiv">
-            
                             <input
                                 type="text"
-                                name="search"
+                                id="search"
                                 className="formdiv-input"
-                                autoFocus
                                 placeholder="GitHub User"
+                                title="Search"
                                 {...register("search", { required: true })} />
                         </div>
-                        <div className="error">
+                        <div className="error" role="alert">
                             {errors.search?.type === 'required' && "You must enter your GitHub user"}
 
                         </div>

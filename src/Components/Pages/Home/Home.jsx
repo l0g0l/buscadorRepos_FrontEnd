@@ -5,7 +5,7 @@ import './home.scss';
 
 const Home = () => {
     return (
-        <div className="container-form">
+        <main className="container-form" role="main">
           <div className="formhome">
             
             <Form/>
@@ -15,7 +15,7 @@ const Home = () => {
 
            
 
-        </div>
+        </main>
     )
 }
 

@@ -9,7 +9,7 @@ import './footer.scss'
 const Footer = () => {
 
     return (
-        <div className="footer-container">
+        <footer className="footer-container" role="contentinfo">
             <div className="footer">
                 <div>
                     <span className="footer-txt">Mi primer <a href="https://discord.com/invite/7Q6UDvaBAz" target="_blank" rel="noreferrer" ><i>Hackathon</i></a> hecho con mucho</span>
@@ -27,7 +27,7 @@ const Footer = () => {
 
             </div>
            
-        </div>
+        </footer>
 
 
     )
