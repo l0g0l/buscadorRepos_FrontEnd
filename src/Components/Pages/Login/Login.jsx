@@ -47,7 +47,7 @@ const Login = (props) => {
         form.current.validateAll();
 
         if (checkBtn.current.context._errors.length === 0) {
-            if (localStorage.getItem("email") !== null) {
+            if (localStorage.getItem("email") === email) {
                 const password_hash = crypto.createHash('sha256').update(password).digest('base64')
                 if (localStorage.getItem("password") == password_hash) {
                     props.history.push("/home");
@@ -71,7 +71,7 @@ const Login = (props) => {
         <div className="container">
             <div className="formdiv-login">
                 <header className="txt-title">
-                    <h1>SearchGithubRepository</h1>
+                    <h1>GitHubRepositoryFinder</h1>
                 </header>
                 <Form onSubmit={handleLogin} ref={form}>
                     <div className="formdiv">

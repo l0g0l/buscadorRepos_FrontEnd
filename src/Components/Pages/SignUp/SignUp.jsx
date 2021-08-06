@@ -83,8 +83,8 @@ const Register = (props) => {
         form.current.validateAll();
 
         if (checkBtn.current.context._errors.length === 0) {
-            if (localStorage.getItem("email") !== null) {
-                setMessage('Usario ya registrado')
+            if (localStorage.getItem("email") === email) {
+                setMessage('Usuario ya registrado')
                 setSuccessful(false)
             } else {
                 localStorage.setItem("username", `${username}`)

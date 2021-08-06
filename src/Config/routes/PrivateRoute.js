@@ -2,23 +2,36 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
 
-function PrivateRoute({ component: Component, ...rest }) {
-    return (
-      <Route
-        {...rest}
-        render={props =>
-          localStorage.getItem('userEmail-')? (
-            <Component {...props} />
-          ) : (
-            <Redirect
-              to={{
-                pathname: "/",
-                state: { from: props.location }
-              }}
-            />
-          )
-        }
-      />
-    );
+const isAuthenticated = () => {
+  const token = localStorage.getItem("password");
+  try {
+    if (token) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  } catch (error) {
+    return false;
   }
-  export default PrivateRoute
+}
+
+function PrivateRoute({ component: Component, ...rest }) {
+  return (
+    <Route
+      {...rest}
+      render={props =>
+        isAuthenticated() ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/",
+            }}
+          />
+        )
+      }
+    />
+  );
+}
+export default PrivateRoute
