@@ -9,7 +9,7 @@ import './index.scss'
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Routes/>
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -3,6 +3,7 @@ import Home from '../../Components/Pages/Home/Home';
 import Layout from '../../Components/Layout/Layout';
 import Login from '../../Components/Pages/Login/Login';
 import SignUp from '../../Components/Pages/SignUp/SignUp';
+import PrivateRoute from './PrivateRoute';
 
 
 const Routes = () => {
@@ -12,9 +13,7 @@ const Routes = () => {
                 <Route exact path='/' component={Login}></Route>
                 <Route path='/signup' component={SignUp}></Route>
                 <Layout>
-
                     <Route path="/home" component={Home}></Route>
-
                 </Layout>
             </Switch>
         </Router>

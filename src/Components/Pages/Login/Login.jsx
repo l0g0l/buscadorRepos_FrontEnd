@@ -84,7 +84,8 @@ const Login = (props) => {
                             onChange={onChangeEmail}
                             validations={[required]}
                             aria-describedby="email"
-                            title="email" />
+                            title="email"
+                             />
                     </div>
                     <div className="formdiv">
                         <label htmlFor="password">Password</label>

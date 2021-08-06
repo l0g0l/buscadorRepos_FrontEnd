@@ -8,9 +8,9 @@ const Card = (props) => {
         <div className="card">
 
             <div className="cardtxt">
-            <div>
+                <div>
                     <h2 className="encabezado">Repository Owner:</h2>
-                    <p className="txt">{props.apidata.owner.login}</p> 
+                    <p className="txt">{props.apidata.owner.login}</p>
 
                 </div>
                 <div>
@@ -18,7 +18,7 @@ const Card = (props) => {
                     <p className="txt">{props.apidata.name}</p>
 
                 </div>
-              
+
             </div>
 
         </div>
