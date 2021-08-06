@@ -7,7 +7,7 @@ function PrivateRoute({ component: Component, ...rest }) {
       <Route
         {...rest}
         render={props =>
-          localStorage.getItem('currentJWT')? (
+          localStorage.getItem('userEmail-')? (
             <Component {...props} />
           ) : (
             <Redirect
