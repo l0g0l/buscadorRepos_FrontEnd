@@ -1,18 +1,15 @@
 # New Document<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img height="200" width ="300"src="Client/public/images/logo.svg" alt="Logo Don't Waste" >
-
 <h4 align="center">SearchGithubRepository</h4>
   <p align="center">
     <a href="https://dontwasteapp.herokuapp.com/">View Web Application</a>
   </p>
   <p align="center">
-<img src="https://www.codefactor.io/repository/github/l0g0l/dont_waste/badge" alt="Codefactor Grade">
+<img src="https://www.codefactor.io/repository/github/l0g0l/buscadorrepos_frontend/badge" alt="Codefactor Grade">
 </p>
 <p align="center">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_dont_waste&metric=alert_status
-" alt="Sonar Quality Gate"></p>
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_buscadorRepos_FrontEnd&metric=alert_status" alt="Sonar Quality Gate"></p>
 
 </p>
 
@@ -40,6 +37,12 @@ npm install react-router-dom
 
 React Router is a collection of navigational components that compose declaratively with your application. Whether you want to have bookmarkable URLs for your web app or a composable way to navigate in React Native, React Router works wherever React is rendering--so take your pick!  
 
+
+### [Sass](https://sass-lang.com/)
+
+npm install -g sass
+
+Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
 
 ### [Sass](https://sass-lang.com/)
 
