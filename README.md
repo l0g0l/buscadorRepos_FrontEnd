@@ -1,7 +1,7 @@
 # New Document<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<h4 align="center">SearchGithubRepository</h4>
+<h4 align="center">GitHubRepositoryFinder</h4>
   <p align="center">
     <a href="https://dontwasteapp.herokuapp.com/">View Web Application</a>
   </p>
@@ -31,24 +31,34 @@
 
 To be more familiar with the libraries and frameworks I have mainly used I will leave a short explanation here:
 
-### [React Router](https://reactrouter.com/)
+### [React-router](https://reactrouter.com/)
 
-npm install react-router-dom
+npm i react-router-dom
 
 React Router is a collection of navigational components that compose declaratively with your application. Whether you want to have bookmarkable URLs for your web app or a composable way to navigate in React Native, React Router works wherever React is rendering--so take your pick!  
 
 
 ### [Sass](https://sass-lang.com/)
 
-npm install -g sass
+npm i sass
 
 Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
 
-### [Sass](https://sass-lang.com/)
+### [React-validation](https://www.npmjs.com/package/react-validation)
 
-npm install -g sass
+npm i react-validation
 
-Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
+Component to provide simple form validation for React components. It uses the Controlled Components approach for validation.
+
+It is not easy to validate forms with React. The reason is a one-way data flow style. In this case we can't affect forms from the inputs in an easy way. React-validation provides several components which are 'connected' to the form via the input's method attached by the Form component.
+
+### [Validator](https://www.npmjs.com/package/validator)
+
+npm i validator
+
+This library validates and sanitizes strings only.
+
+If you're not sure if your input is a string, coerce it using input + ''. Passing anything other than a string will result in an error.  
 
 ### Prerequisites
 
@@ -85,9 +95,12 @@ Creation of a GitHub repository finder
 
 ### Requirements  
 
--Develop the front end of the app with React.
--The application must be SPA (single page application), so that there is no page reloading at any time, and only the minimum necessary content is loaded and rendered with each endpoint change.
--Save log data in the localstorage.
+-Develop the front end of the app with React.  
+
+-The application must be SPA (single page application), so that there is no page reloading at any time, and only the minimum necessary content is loaded and rendered with each endpoint change.  
+
+-Save log data in the localstorage.  
+
 -Version control management with GiT.
 
 
@@ -130,7 +143,7 @@ Creation of a GitHub repository finder
 ## Languages and Tools:
 
 
-The project is deployed in [Heroku](https://id.heroku.com/)  
+The project is deployed in [GitHub Pages](https://pages.github.com/)  
 <br>
 
 <p align="left">
