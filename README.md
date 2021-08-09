@@ -3,7 +3,7 @@
 <p align="center">
 <h4 align="center">GitHubRepositoryFinder</h4>
   <p align="center">
-    <a href="https://dontwasteapp.herokuapp.com/">View Web Application</a>
+    <a href="https://githubrepositoryfinder.herokuapp.com/">View Web Application</a>
   </p>
   <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/buscadorrepos_frontend/badge" alt="Codefactor Grade">
@@ -11,6 +11,8 @@
 <p align="center">
 <img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_buscadorRepos_FrontEnd&metric=alert_status" alt="Sonar Quality Gate"></p>
 
+<p align="center">
+<img src="public/images/accesibilityTest.png" alt="Accesibility test"></p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -110,23 +112,7 @@ Creation of a GitHub repository finder
 
 ## App Overview  
 
-###### SignUp 
-
-<img src="Client/public/images/registro.png" alt="SignUp" >
-
-<br>
-<br>
-
-###### Login 
-
-<img src="Client/public/images/login.png" alt="Login" >
-
-<br>
-<br>
-
-###### Home 
-
-<img src="Client/public/images/home.gif" alt="Home" >
+<img src="public/images/GithubRepositoryFinder.gif" alt="view complete aplication " >
 
 <br>
 <br>
@@ -143,7 +129,7 @@ Creation of a GitHub repository finder
 ## Languages and Tools:
 
 
-The project is deployed in [GitHub Pages](https://pages.github.com/)  
+The project is deployed in [Heroku](https://www.heroku.com/)  
 <br>
 
 <p align="left">
