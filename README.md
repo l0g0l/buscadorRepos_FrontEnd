@@ -12,7 +12,7 @@
 <img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_buscadorRepos_FrontEnd&metric=alert_status" alt="Sonar Quality Gate"></p>
 
 <p align="center">
-<img src="public/images/accesibilityTest.png" alt="Accesibility test"></p>
+<img src="public/images/accesibilityTest.png" alt="Accesibility test" width="400"></p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
