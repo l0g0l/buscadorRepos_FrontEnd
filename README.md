@@ -1,4 +1,4 @@
-# New Document<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO -->
 <br />
 <p align="center">
 <h4 align="center">GitHubRepositoryFinder</h4>
