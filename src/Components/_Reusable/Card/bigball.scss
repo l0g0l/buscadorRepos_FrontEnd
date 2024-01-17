@@ -1,0 +1,19 @@
+    .bigball {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #bfff00;
+        border-radius: 50%;
+        width: 6.25rem;
+        height: 6.25rem;
+        margin: 0.3rem;
+        text-align: center;
+
+        .txt {
+            color: #000000;
+            font-size: 1.06rem;
+        }
+
+
+
+    }

@@ -1,0 +1,30 @@
+.bigball-group {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallball-group {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram-container-bigball {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  border: 0.3rem #4d4b4b solid;
+}
+
+.diagram-container-smallball {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  border: 0.3rem #4d4b4b solid;
+}
